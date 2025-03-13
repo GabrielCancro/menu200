@@ -1,4 +1,4 @@
-import * as fireutils from "../libs/fireutils.js";
+/*import * as fireutils from "../libs/fireutils.js";
 import * as fdb from "../libs/firebase_realtime_basedata.js";
 import * as loginPage from "../pages/login.js";
 import * as homePage from "../pages/home.js";
@@ -60,3 +60,4 @@ export async function showfloatText(msg){
 	}, 500+msg.length*110));
 }
 
+*/
