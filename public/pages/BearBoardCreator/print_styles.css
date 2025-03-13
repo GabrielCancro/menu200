@@ -1,0 +1,82 @@
+body{
+    background-color: #909090;
+}
+#print_paper{
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    z-index: -1000;
+    padding: 1cm;
+    /*background-color: #f03030;*/
+}
+#print_work_space{
+    display: inline-block;
+    font-size: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+.card_print{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+#print_header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#config_page_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 999;
+}
+
+#config_page{
+    margin: auto;
+    text-align: center;
+    width: 25em;
+    background-color: #f0f0f0;
+    z-index: 999;
+    padding: 2em;
+    border: 2px solid #303030;
+    border-radius: 1em;
+}
+
+#config_page input{
+    margin-left: 1em;
+    font-size: 1.2em;
+    width: 4em;
+    text-align: center;
+}
+
+#btn_close_config_page{
+    position: relative;
+    top:-1em;
+    left:12.2em; 
+    border-radius: .2em;
+}
+
+@media print {
+	.ds_btn{display: none;}
+    #print_paper{    
+        background-color: white;
+    }
+    body{
+        background-color: white;
+    }
+}
+
+.hidden{ display: none !important;}
+.no-resize{ resize: none !important;}
+.ds_btn.red{ 
+    background-color: #f03030;
+    margin-inline: 2em;
+}

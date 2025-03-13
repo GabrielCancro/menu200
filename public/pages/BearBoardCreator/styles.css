@@ -1,0 +1,166 @@
+body{border:none !important;}
+#design_header{  
+    display: inline-block;      
+    width: 100%;
+    line-height: 2em;
+    background-color: black;
+    padding: .4em;
+}
+.ds_btn {
+    display: inline-block;
+    background-color: #A9A9F9;
+    line-height: 2em;
+    padding: 0 1em;
+    user-select: none;
+}
+.ds_btn:hover {
+    background-color: #D9D9F9;
+}
+input.ds_btn{ 
+    background-color: #D9D9FF; 
+    padding: 0 .2em;
+    text-align: center;
+    border-top: solid #707070;
+}
+#slc_cards{
+    display: inline-block;
+    text-align: center;
+    background-color: #A9A9F9;
+    height: 2em;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    width: 12em;
+}
+#slc_cards option{
+    padding: 1em;
+}
+#design_body{
+    display: flex;
+    align-items: center; 
+    background-color: #555;
+    width: 100%;
+    height: 90vh;
+}
+#design_body #design_work_space{
+    background-color: #909090;
+    width: 50%;
+    height: 100%;
+}
+
+#add_node_panel{
+    margin-top: .4em;
+    /*position:absolute;
+    top:3em;
+    left:1em;
+    z-index: 10; */   
+}
+
+#add_node_panel .ds_btn{
+    border: 2px solid #3030FF;
+    border-radius: .3em;
+    background-color: #A0A0FF;
+}
+#design_work_space #card_space {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /*box-shadow: 0px 0px 0px 2px #000; */
+}
+
+#design_work_space #card_space .node{
+    user-select: none;
+}
+#design_work_space #card_space .node:hover{
+    z-index: 99999;
+    opacity: .9;
+}
+#selector_node{
+    position: absolute;
+    border: 2px solid cornflowerblue;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+#design_body #design_edit_panel{
+    display: inline-block;
+    background-color: #F0A0A0;
+    padding: 0 2.5%;
+    width: 45%;
+    height: 100%;
+}
+#json_editor{
+    background-color: #A0A0A0;
+    padding: 1em;
+    box-shadow: 0px 0px 0px 2px black;
+    border-radius: .2em;
+    min-height: 5em;
+}
+#json_editor #key{
+    width: 45%;
+    max-width: 10em;
+}
+#json_editor #value{
+    width: 45%;
+    max-width: 15em;
+}
+.json_editor_line{ 
+    display: flex;
+    align-items: center;    
+}
+
+.hidden{ display: none !important;}
+.no-resize{ resize: none !important;}
+.ds_btn.red{ 
+    background-color: #f03030;
+    margin-inline: 2em;
+}
+
+.nodeListButton{
+    user-select: none;
+    background-color: #F0A020;
+    padding: .2em .4em;
+    margin: .2em;
+    border: 2px solid #303030;
+    border-radius: .2em;
+}
+
+.nodeListButton:hover{
+    background-color: #F0F080;
+}
+
+/*EDITOR HEADER*/
+#nodes_editor_header > *{
+    display: inline-block;
+}
+
+#nodes_editor_header .ds_btn{ 
+    margin-left: 1em;
+    border: 2px solid #303030;
+    border: 2px solid #303030;
+    border-radius: .2em;
+}
+#amount_card, #size_card_x, #size_card_y {
+    width: 5em;
+    font-weight: bold;
+}
+
+
+@media (max-aspect-ratio: 3/4) {
+    #design_body  #design_work_space{
+        width: 100%;
+        height: 40%;
+    }
+    #design_body  #design_edit_panel{
+        width: 100%;
+        height: 40%;
+    }
+}

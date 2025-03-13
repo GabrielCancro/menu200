@@ -1,0 +1,65 @@
+<div id="projects_scene">
+    <h2>Elige un proyecto o crea uno nuevo</h2>
+        <div id="main_menu">
+            <div id="new_project">
+                <input type="text" id="inp_new_project" placeholder="New Project Name"/>
+                <div id="btn_new_project" class="ds_btn">CREATE</div>
+            </div>
+            <div id="project_list">
+                <div class="ds_btn">PROJECT_01</div>
+                <div class="ds_btn">PROJECT_02</div>
+                <div class="ds_btn">PROJECT_03</div>
+            </div>   
+            <div id="delete_project">
+                <input type="text" id="inp_del_project"  placeholder="Delete Project Name" class="hidden"/>
+                <div id="btn_del_project" class="ds_btn red">DELETE</div>
+            </div>     
+        </div>        
+    </div>
+</div>
+
+<style type="text/css">
+    #projects_scene{
+        text-align: center;
+        background-color: white;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 1em;
+    }
+    #main_menu{
+        display: inline-block;
+        width: 20em;
+        margin: auto;
+    }
+    input{
+        display: inline-block;
+        text-align: center;
+        line-height: 2em;
+    }
+    #new_project .ds_btn{
+        display: inline-block;
+    }
+    #delete_project .ds_btn{
+        display: inline-block;
+    }
+    .ds_btn {
+        display: block;
+        background-color: #A9A9F9;
+        line-height: 2em;
+        padding: 0 1em;
+        margin: .2em;
+        user-select: none;
+    }
+    .ds_btn:hover {
+        background-color: #D9D9F9;
+    }
+    #project_list{
+        margin: auto;
+        width: 15em;
+    }
+    .hidden{ display: none !important;}
+    .no-resize{ resize: none !important;}
+    .ds_btn.red{ 
+        background-color: #f03030;
+    }
+</style>
