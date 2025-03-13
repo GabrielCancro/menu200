@@ -1,12 +1,9 @@
 {
-  "scripts": {
-    "start": "autoreload-server -d ./public -p 8080",
-    "deploy": "firebase deploy"
-  },
   "hosting": {
     "public": "public",
     "ignore": [
       "firebase.json",
+      "**/.*",
       "**/node_modules/**"
     ]
   }
